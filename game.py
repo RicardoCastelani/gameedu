@@ -17,6 +17,7 @@ altura = 627
 display = pygame.display.set_mode( (largura, altura) )
 fps = pygame.time.Clock()
 fundo = pygame.image.load("assets/bibio.png")
+mensagem = pygame.image.load("assets/frase1.png")
 estudante = pygame.image.load("assets/perso1.png")
 branco = (255,255,255)
 livro = pygame.image.load("assets/book3.png")
@@ -61,7 +62,9 @@ while True:
             quit()
     
     # Fim da vereficação 
+    
     display.blit(fundo, (0,0))
+    display.blit(mensagem, (629,285))
     display.blit(estudante,(550, 420))
     display.blit(livro,(posicaoX, posicaoY))
 
