@@ -9,6 +9,8 @@ arquivo.close()
 pygame.init()
 
 pygame.display.set_caption("Jogo Educacional CC-IMED 2021")
+icone = pygame.image.load("assets/book3.png") 
+pygame.display.set_icon(icone)
 
 largura = 1200
 altura = 627 
@@ -18,7 +20,6 @@ fundo = pygame.image.load("assets/bibio.png")
 estudante = pygame.image.load("assets/perso1.png")
 branco = (255,255,255)
 livro = pygame.image.load("assets/book3.png")
-
 posicaoX = random.randint(10,1100)
 posicaoY = 0
 pontos = 0
