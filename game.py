@@ -24,6 +24,7 @@ livro = pygame.image.load("assets/book3.png")
 posicaoX = random.randint(10,1100)
 posicaoY = 0
 pontos = 0
+caiu = 0
 
 def escrevendoPlacar(pontos):
     font = pygame.font.SysFont(None, 80)
@@ -52,6 +53,11 @@ while True:
     if posicaoY > 650:
         posicaoY = 0
         posicaoX = random.randint(10,1100)
+        caiu +=1
+    if caiu >= 3:
+        pygame.quit()
+        quit()
+
 
     posicaoY = posicaoY + 6
 
@@ -62,6 +68,7 @@ while True:
             quit()
     
     # Fim da vereficação 
+
     
     display.blit(fundo, (0,0))
     display.blit(mensagem, (629,285))
