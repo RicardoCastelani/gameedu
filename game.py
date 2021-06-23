@@ -8,6 +8,8 @@ arquivo.close()
 
 pygame.init()
 
+pygame.display.set_caption("Jogo Educacional CC-IMED 2021")
+
 largura = 1200
 altura = 627 
 display = pygame.display.set_mode( (largura, altura) )
@@ -37,12 +39,12 @@ def verifica(x,y,posicaoX, posicaoY):
 
 while True:
     display.fill((0,0,0))
-    #escrevendoPlacar(pontos) 
+   
     if pontos >= 20:
         pygame.quit()
         quit()
     x,y = pygame.mouse.get_pos()
-    #print(x,y)
+
     posicaoX, posicaoY, pontos = verifica(x,y,posicaoX, posicaoY)
 
     if posicaoY > 650:
