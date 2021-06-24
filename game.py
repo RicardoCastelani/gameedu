@@ -58,17 +58,13 @@ while True:
         pygame.quit()
         quit()
 
-
     posicaoY = posicaoY + 6
-
-    # verefica interação  do  usuario 
+# verefica interação  do  usuario 
     for evento in pygame.event.get(): 
         if evento.type == pygame.QUIT:
             pygame.quit()
             quit()
-    
     # Fim da vereficação 
-
     
     display.blit(fundo, (0,0))
     display.blit(mensagem, (629,285))
